@@ -1,0 +1,10 @@
+.footerWrapper {
+    padding: 35px 0;
+    background-color: #212529;
+    text-align: center;
+}
+
+.footerText {
+    color: rgba(255,255,255,.55);
+    margin-bottom: 0;
+}

@@ -1,0 +1,31 @@
+.sectionWrapper {
+    padding: 100px 15px;
+    background-image: linear-gradient(135deg, #2962ff 0%, #512da8 100%);
+    text-align: center;
+    color: #fff;
+}
+
+.sectionTitle {
+    font-size: 3em;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px rgb(0 0 0 / 30%);
+    margin-bottom: 15px;
+}
+
+.sectionSubtitle {
+    font-weight: 300;
+    text-shadow: 2px 2px 2px rgb(0 0 0 / 30%);
+    margin-bottom: 35px;
+}
+
+.sectionIcon {
+    position: relative;
+    top: 0;
+    color: #fff !important;
+    font-size: 3em;
+    transition: all .3s ease-in-out;
+}
+
+.sectionIcon:hover {
+    top: -5px;
+}

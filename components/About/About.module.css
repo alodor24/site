@@ -1,0 +1,5 @@
+@media(max-width: 575px) {
+    .avatar {
+        margin-bottom: 25px !important;
+    }
+}

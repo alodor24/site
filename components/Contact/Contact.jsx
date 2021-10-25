@@ -2,7 +2,6 @@ import { Col, Row } from 'react-bootstrap'
 import styles from './Contact.module.css'
 
 const Contact = () => {
-
     return (
         <section className={ styles.sectionWrapper }>
             <Row>

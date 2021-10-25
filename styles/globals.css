@@ -4,3 +4,46 @@
 * {
     font-family: 'Comfortaa', cursive;
 }
+
+/* Section */
+.sectionWrapper {
+    padding: 80px 50px;
+    background-color: #fff;
+}
+
+.sectionTitle {
+    font-size: calc(2em + 1vw);
+}
+
+.lineWrapper {
+    margin-bottom: 50px;
+    width: 50%;
+    height: 5px;
+    background-color: #ecf0f1;
+    border-radius: 50px;
+    margin-left: 10px;
+    padding: 0;
+}
+
+.lineColor {
+    width: 30%;
+    height: 5px;
+    background-image: linear-gradient(135deg, #2962ff 0%, #512da8 100%);
+    border-radius: 50px;
+}
+
+.textFlow {
+    font-size: calc(.4em + 1vw);
+}
+
+@media(max-width: 540px) {
+    .sectionWrapper {
+        padding: 80px 25px;
+    }
+}
+
+@media(max-width: 575px) {
+    .textFlow {
+        font-size: calc(1em + 1vw);
+    }
+}

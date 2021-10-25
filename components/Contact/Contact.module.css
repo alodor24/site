@@ -6,7 +6,7 @@
 }
 
 .sectionTitle {
-    font-size: 3em;
+    font-size: calc(2em + 1vw);
     font-weight: 700;
     text-shadow: 2px 2px 2px rgb(0 0 0 / 30%);
     margin-bottom: 15px;

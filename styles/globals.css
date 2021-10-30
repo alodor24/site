@@ -5,6 +5,19 @@
     font-family: 'Comfortaa', cursive;
 }
 
+::-webkit-scrollbar-track {
+    background-color: #000;
+}
+
+::-webkit-scrollbar {
+width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+background: linear-gradient(135deg, #2962ff 0%, #512da8 100%);
+border-radius: 100px;
+}
+
 /* Section */
 .sectionWrapper {
     padding: 80px 50px;

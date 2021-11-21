@@ -1,7 +1,7 @@
 import Head from '../components/Head'
-import Navbar from '../components/Navbar/Navbar'
-import Layout from '../components/Layout/Layout'
-import Footer from '../components/Footer/Footer'
+import Navbar from '../components/Navbar'
+import Layout from '../components/Layout'
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (

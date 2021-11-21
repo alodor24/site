@@ -1,9 +1,9 @@
 import { Container, Row } from 'react-bootstrap'
 import styles from './Layout.module.css'
 
-import Hero from '../Hero/Hero'
-import About from '../About/About'
-import Contact from '../Contact/Contact'
+import Hero from '../Hero'
+import About from '../About'
+import Contact from '../Contact'
 
 const Layout = () => {
     return (

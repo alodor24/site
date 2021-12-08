@@ -1,4 +1,5 @@
 import { Col, Row } from 'react-bootstrap'
+import Image from 'next/image'
 import styles from './Project.module.css'
 import { projects } from './constants'
 
@@ -16,22 +17,28 @@ const Project = () => {
       <Row>
         {projects.map((project, index) => (
           <Col key={index} md={6} lg={4}>
-            <div className="card-project">
-              <div className="card-project-header">
+            <div className={styles.card}>
+              <div className={styles.cardHeader}>
                 <a href={project.url} target="_blank" rel="noreferrer">
-                  {/* <img className="img-fluid" src={project.image} /> */}
+                  <Image
+                  className={styles.cardImage}
+                  src={project.image} 
+                  alt={project.name}
+                  width={100}
+                  height={100}
+                  layout='responsive'
+                  />
                 </a>                    
               </div>
 
-              <div className="card-project-body">
-                <h4 className="card-title">{project.name}</h4>
+              <div className={styles.cardBody}>
+                <h4 className={styles.cardTitle}>{project.name}</h4>
                 <p>{project.type}</p>
               </div>
 
-              <div className="card-project-footer">
+              <div className={styles.cardFooter}>
                 <a href={project.url} target="_blank" rel="noreferrer">
-                  <i className="fas fa-external-link-alt"></i>
-                  Ver Proyecto
+                  <i className="fas fa-external-link-alt" /> Ver Proyecto
                 </a>
               </div>
             </div>              

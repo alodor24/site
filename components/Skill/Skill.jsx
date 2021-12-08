@@ -1,7 +1,7 @@
 import { Col, Row } from 'react-bootstrap'
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import styles from './Skill.module.css'
-import { skills } from './contants'
+import { skills } from './constants'
 
 const Skill = () => {
   return (

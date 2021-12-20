@@ -1,30 +1,54 @@
+import { useState, useEffect } from 'react'
 import { Container, Row } from 'react-bootstrap'
 import styles from './Layout.module.css'
+import Head from '../Head'
+import Navbar from '../Navbar'
 import Hero from '../Hero'
 import About from '../About'
-import Skill from '../Skill/Skill'
+import Skill from '../Skill'
 import Contact from '../Contact'
-import Project from '../Project/Project'
+import Project from '../Project'
+import Footer from '../Footer'
+import Loader from '../Loader'
 
 const Layout = () => {
+    const [isLoading, setIsLoading] = useState(true)
+
+    useEffect(() => {
+        setTimeout(() => {
+            setIsLoading(false)
+        }, 3000)
+    }, [])
+
     return (
-        <main className={ styles.backgroundWrapper }>
-            <Hero />
-            <Container>
-                <Row>
-                    <About />
-                </Row>
-                <Row>
-                    <Skill />
-                </Row>
-                <Row>
-                    <Project />
-                </Row>
-                <Row>
-                    <Contact />
-                </Row>
-            </Container>
-        </main>
+        <>
+            { isLoading && <Loader /> }
+
+            { !isLoading && (
+                <div className={styles.fadeIn}>
+                    <Head />
+                    <Navbar />
+                    <main className={ styles.backgroundWrapper }>
+                        <Hero />
+                        <Container>
+                            <Row>
+                                <About />
+                            </Row>
+                            <Row>
+                                <Skill />
+                            </Row>
+                            <Row>
+                                <Project />
+                            </Row>
+                            <Row>
+                                <Contact />
+                            </Row>
+                        </Container>
+                    </main>
+                    <Footer />
+                </div>
+            )}
+        </>
     )
 }
 

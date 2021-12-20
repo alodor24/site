@@ -1,0 +1,43 @@
+.loader {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeOut ease 3s;
+}
+
+.spin {
+  width: 80px;
+  height: 80px;
+  animation-name: spin;
+  animation-direction: alternate;
+  animation-duration: 1.7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes spin {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    background-color: #fff;
+  }
+
+  100% {
+    background-color: transparent;
+  }
+}

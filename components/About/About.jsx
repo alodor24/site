@@ -4,8 +4,8 @@ import styles from './About.module.css'
 
 const About = () => {
     return (
-        <section className="sectionWrapper">
-            <Row>
+        <section className="sectionWrapper" data-aos="zoom-in">
+            <Row data-aos="fade-up">
                 <h3 className="sectionTitle">Acerca de</h3>
                 <div className="lineWrapper">
                     <div className="lineColor"></div>
@@ -13,7 +13,7 @@ const About = () => {
             </Row>
 
             <Row>
-                <Col sm={4}>
+                <Col sm={4} data-aos="fade-up">
                     <Image
                     className={ styles.avatar }
                     src="/assets/images/alodor.png" 
@@ -23,7 +23,7 @@ const About = () => {
                     />
                 </Col>
 
-                <Col sm={8}>
+                <Col sm={8} data-aos="fade-up">
                     <p className="textFlow">Me llamo José Alejandro Méndez Sánchez, Ingeniero Informático Venezolano apasionado por la tecnología. Alodor es mi seudónimo, el mismo es un acrónimo originado a partir de un juego de palabras.</p>
 
                     <p className="textFlow">Soy un desarrollador con más de 4 años de experiencia en tecnologías web. Especialista en solución de problemas mediante metodologías ágiles.</p>

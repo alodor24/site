@@ -5,8 +5,8 @@ import { projects } from './constants'
 
 const Project = () => {
   return (
-    <section className="sectionWrapper">
-      <Row>
+    <section className="sectionWrapper" data-aos="zoom-in">
+      <Row data-aos="fade-up">
           <h3 className="sectionTitle">Proyectos</h3>
           <div className="lineWrapper">
               <div className="lineColor"></div>
@@ -16,7 +16,7 @@ const Project = () => {
 
       <Row>
         {projects.map((project, index) => (
-          <Col key={index} md={6} lg={4}>
+          <Col key={index} md={6} lg={4} data-aos="fade-up">
             <div className={styles.card}>
               <div className={styles.cardHeader}>
                 <a href={project.url} target="_blank" rel="noreferrer">

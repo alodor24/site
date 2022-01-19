@@ -10,9 +10,17 @@ import Contact from '../Contact'
 import Project from '../Project'
 import Footer from '../Footer'
 import Loader from '../Loader'
+import AOS from 'aos'
+import "aos/dist/aos.css"
 
 const Layout = () => {
     const [isLoading, setIsLoading] = useState(true)
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            AOS.init()
+        }
+    }, [])
 
     useEffect(() => {
         setTimeout(() => {

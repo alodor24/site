@@ -5,8 +5,8 @@ import { skills } from './constants'
 
 const Skill = () => {
   return (
-    <section className="sectionWrapper">
-      <Row>
+    <section className="sectionWrapper" data-aos="zoom-in">
+      <Row data-aos="fade-up">
           <h3 className="sectionTitle">Habilidades</h3>
           <div className="lineWrapper">
               <div className="lineColor"></div>
@@ -16,7 +16,7 @@ const Skill = () => {
 
       <Row>
         {skills.map((skill, index) => (
-          <Col key={ index } xs={12} sm={3} className="mb-4">
+          <Col key={ index } xs={12} sm={3} className="mb-4" data-aos="fade-up">
             <p className={ `${styles.textFlow} textFlow` }>
               { skill.name }
             </p>

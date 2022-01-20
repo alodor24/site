@@ -1,5 +1,6 @@
 import { Navbar, Nav, Container } from 'react-bootstrap'
 import Image from 'next/image'
+import { Link } from 'react-scroll'
 import styles from './Navbar.module.css'
 
 const NavbarApp = () => {
@@ -25,10 +26,10 @@ const NavbarApp = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
                     <Nav>
-                        <Nav.Link href="#">Inicio</Nav.Link>
-                        <Nav.Link href="#">Acerca de</Nav.Link>
-                        <Nav.Link href="#">Habilidades</Nav.Link>
-                        <Nav.Link href="#">Proyectos</Nav.Link>
+                        <Link className={styles.navbarLink} to="hero" offset={-85}>Inicio</Link>
+                        <Link className={styles.navbarLink} to="about" offset={-85}>Acerca de</Link>
+                        <Link className={styles.navbarLink} to="skill" offset={-85}>Habilidades</Link>
+                        <Link className={styles.navbarLink} to="project" offset={-85}>Proyectos</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

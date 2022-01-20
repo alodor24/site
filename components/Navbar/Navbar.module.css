@@ -5,3 +5,21 @@
 .navbarShadow {
     box-shadow: 0 0 15px 0 rgba(0,0,0,.3);
 }
+
+.navbarLink {
+    color: rgba(255,255,255,.55);
+    cursor: pointer;
+    padding: 0 10px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbarLink:hover {
+    color: rgba(255,255,255,.85);
+}
+
+@media(max-width: 912px) {
+    .navbarLink {
+        padding: 10px;
+    }
+}

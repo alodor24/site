@@ -4,7 +4,7 @@ import styles from './About.module.css'
 
 const About = () => {
     return (
-        <section className="sectionWrapper" data-aos="zoom-in">
+        <section id="about" className="sectionWrapper" data-aos="zoom-in">
             <Row data-aos="fade-up">
                 <h3 className="sectionTitle">Acerca de</h3>
                 <div className="lineWrapper">

@@ -5,7 +5,7 @@ import { skills } from './constants'
 
 const Skill = () => {
   return (
-    <section className="sectionWrapper" data-aos="zoom-in">
+    <section id="skill" className="sectionWrapper" data-aos="zoom-in">
       <Row data-aos="fade-up">
           <h3 className="sectionTitle">Habilidades</h3>
           <div className="lineWrapper">

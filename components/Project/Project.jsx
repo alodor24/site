@@ -5,7 +5,7 @@ import { projects } from './constants'
 
 const Project = () => {
   return (
-    <section className="sectionWrapper" data-aos="zoom-in">
+    <section id="project" className="sectionWrapper" data-aos="zoom-in">
       <Row data-aos="fade-up">
           <h3 className="sectionTitle">Proyectos</h3>
           <div className="lineWrapper">
